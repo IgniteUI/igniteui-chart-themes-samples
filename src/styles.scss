@@ -1,12 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
 // Standard CSS normalize, comment out if not required or using a different module
 @import "~minireset.css/minireset";
-
-
+@import '~igniteui-angular/lib/core/styles/themes/index';
 
 html, body {
   height: 100%;
 }
+
 .content p {
   margin: 15px;
 }
+
+$palette: $bootstrap-dark-palette;
+$schema: $dark-bootstrap-schema;
+
+$igx-background-color: igx-color($palette, 'surface');
+$igx-foreground-color: text-contrast($igx-background-color);
+
+
+@include igx-core();
+@include igx-theme($palette: $palette, $schema: $schema);
+
+body {
+    background: $igx-background-color;
+    color: rgba($igx-foreground-color, .87);
+}
+
+// $data-chart-theme: igx-data-chart-theme($title-horizontal-alignment: left);
+// @include igx-css-vars($data-chart-theme);

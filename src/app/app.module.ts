@@ -7,13 +7,23 @@ import { IgxNavigationDrawerModule, IgxNavbarModule, IgxLayoutModule, IgxRippleM
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
+import { CategoryChartComponent } from './category-chart/category-chart.component';
+import {
+  IgxCategoryChartModule,
+  IgxDataChartCoreModule,
+  IgxBarSeriesModule,
+  IgxColumnSeriesModule,
+  IgxLegendModule,
+  IgxDataChartInteractivityModule
+} from 'igniteui-angular-charts';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
-],
-imports: [
+    HomeComponent,
+    CategoryChartComponent
+  ],
+  imports: [
     FormsModule,
     BrowserModule,
     HammerModule,
@@ -22,7 +32,13 @@ imports: [
     IgxNavigationDrawerModule,
     IgxNavbarModule,
     IgxLayoutModule,
-    IgxRippleModule
+    IgxRippleModule,
+    IgxCategoryChartModule,
+    IgxDataChartCoreModule,
+    IgxBarSeriesModule,
+    IgxColumnSeriesModule,
+    IgxLegendModule,
+    IgxDataChartInteractivityModule
   ],
   providers: [],
   bootstrap: [AppComponent]
