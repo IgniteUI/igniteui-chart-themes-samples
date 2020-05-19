@@ -6,12 +6,14 @@ import { PageNotFoundComponent } from './error-routing/not-found/not-found.compo
 import { UncaughtErrorComponent } from './error-routing/error/uncaught-error.component';
 import { ErrorRoutingModule } from './error-routing/error-routing.module';
 import { CategoryChartComponent } from './category-chart/category-chart.component';
+import { PieChartComponent } from './pie-chart/pie-chart.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent, data: { text: 'Home' } },
   { path: 'error', component: UncaughtErrorComponent },
   { path: 'category-chart', component: CategoryChartComponent, data: { text: 'Category Chart' } },
+  { path: 'pie-chart', component: PieChartComponent, data: { text: 'Pie Chart' } },
   { path: '**', component: PageNotFoundComponent } // must always be last
 ];
 
@@ -19,5 +21,4 @@ export const routes: Routes = [
   imports: [RouterModule.forRoot(routes), ErrorRoutingModule],
   exports: [RouterModule, ErrorRoutingModule]
 })
-export class AppRoutingModule {
-}
+export class AppRoutingModule { }
