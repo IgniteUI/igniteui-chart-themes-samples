@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { DataChartComponent } from './data-chart/data-chart.component';
 import { CategoryChartComponent } from './category-chart/category-chart.component';
+import { FinancialChartComponent } from './financial-chart/financial-chart.component';
 import { PieChartComponent } from './pie-chart/pie-chart.component';
 import {
   IgxCategoryChartModule,
@@ -18,6 +19,7 @@ import {
   IgxLegendModule,
   IgxDataChartInteractivityModule,
   IgxPieChartModule,
+  IgxFinancialChartModule
 } from 'igniteui-angular-charts';
 
 @NgModule({
@@ -26,6 +28,7 @@ import {
     HomeComponent,
     DataChartComponent,
     CategoryChartComponent,
+    FinancialChartComponent,
     PieChartComponent
   ],
   imports: [
@@ -44,7 +47,8 @@ import {
     IgxColumnSeriesModule,
     IgxLegendModule,
     IgxDataChartInteractivityModule,
-    IgxPieChartModule
+    IgxPieChartModule,
+    IgxFinancialChartModule
   ],
   providers: [],
   bootstrap: [AppComponent]
