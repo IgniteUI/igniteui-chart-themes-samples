@@ -7,6 +7,7 @@ import { IgxNavigationDrawerModule, IgxNavbarModule, IgxLayoutModule, IgxRippleM
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
+import { DataChartComponent } from './data-chart/data-chart.component';
 import { CategoryChartComponent } from './category-chart/category-chart.component';
 import { PieChartComponent } from './pie-chart/pie-chart.component';
 import {
@@ -23,6 +24,7 @@ import {
   declarations: [
     AppComponent,
     HomeComponent,
+    DataChartComponent,
     CategoryChartComponent,
     PieChartComponent
   ],
