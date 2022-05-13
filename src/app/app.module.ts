@@ -12,15 +12,30 @@ import { CategoryChartComponent } from './category-chart/category-chart.componen
 import { FinancialChartComponent } from './financial-chart/financial-chart.component';
 import { PieChartComponent } from './pie-chart/pie-chart.component';
 import {
-  IgxCategoryChartModule,
-  IgxDataChartCoreModule,
-  IgxBarSeriesModule,
-  IgxColumnSeriesModule,
-  IgxLegendModule,
-  IgxDataChartInteractivityModule,
-  IgxPieChartModule,
-  IgxFinancialChartModule
+    IgxCategoryChartModule,
+    IgxDataChartCoreModule,
+    IgxBarSeriesModule,
+    IgxColumnSeriesModule,
+    IgxLegendModule,
+    IgxDataChartInteractivityModule,
+    IgxPieChartModule,
+    IgxFinancialChartModule,
+    IgxTreemapModule,
+    IgxDataChartStackedModule,
+    IgxStackedFragmentSeriesModule,
+    IgxDataChartCategoryModule,
+    IgxSparklineModule,
+    IgxDataChartShapeModule,
+    IgxDataChartShapeCoreModule,
+    IgxDataChartScatterModule,
 } from 'igniteui-angular-charts';
+import { TreemapComponent } from './treemap/treemap.component';
+import { StepChartComponent } from './step-chart/step-chart.component';
+import { StackedChartComponent } from './stacked-chart/stacked-chart.component';
+import { SparklineChartComponent } from './sparkline-chart/sparkline-chart.component';
+import { SplineChartComponent } from './spline-chart/spline-chart.component';
+import { ShapeChartComponent } from './shape-chart/shape-chart.component';
+import { ScatterChartComponent } from './scatter-chart/scatter-chart.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +44,14 @@ import {
     DataChartComponent,
     CategoryChartComponent,
     FinancialChartComponent,
-    PieChartComponent
+    PieChartComponent,
+    TreemapComponent,
+    StepChartComponent,
+    StackedChartComponent,
+    SparklineChartComponent,
+    SplineChartComponent,
+    ShapeChartComponent,
+    ScatterChartComponent
   ],
   imports: [
     FormsModule,
@@ -48,7 +70,15 @@ import {
     IgxLegendModule,
     IgxDataChartInteractivityModule,
     IgxPieChartModule,
-    IgxFinancialChartModule
+    IgxFinancialChartModule,
+    IgxTreemapModule,
+    IgxDataChartStackedModule,
+    IgxStackedFragmentSeriesModule,
+    IgxDataChartCategoryModule,
+    IgxSparklineModule,
+    IgxDataChartShapeModule,
+    IgxDataChartShapeCoreModule,
+    IgxDataChartScatterModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,20 @@
+<div class="toolbar">
+    <igx-legend #legend orientation="horizontal"></igx-legend>
+    <div igxLayout style="gap: 16px;">
+        <label class="options-label">Stacked Series: </label>
+        <select (change)=onSeriesTypeChanged($event)>
+            <option>Stacked Column</option>
+            <option>Stacked 100 Column</option>
+            <option>Stacked Area</option>
+            <option>Stacked 100 Area</option>
+            <option>Stacked Line</option>
+            <option>Stacked 100 Line</option>
+            <option>Stacked Spline</option>
+            <option>Stacked 100 Spline</option>
+            <option>Stacked Bar</option>
+            <option>Stacked 100 Bar</option>
+        </select>
+    </div>
+</div>
+
+<igx-data-chart #chart width="100%" height="100%" [dataSource]="data" [legend]="legend"></igx-data-chart>
