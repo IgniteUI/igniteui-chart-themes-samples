@@ -10,10 +10,10 @@ html, body {
   margin: rem(15px);
 }
 
-$palette: $light-fluent-excel-palette;
-$schema: $light-fluent-schema;
-$typeface: $fluent-typeface;
-$type-scale: $fluent-type-scale;
+$palette: $light-bootstrap-palette;
+$schema: $light-bootstrap-schema;
+$typeface: $bootstrap-typeface;
+$type-scale: $bootstrap-type-scale;
 
 $background-color: contrast-color($palette, 'grays', 900);
 $foreground-color: color($palette, 'grays', 900);
@@ -28,9 +28,11 @@ body {
 	margin: 0;
 }
 
-$data-chart-theme: data-chart-theme(
-	$title-text-color: red,
-	$title-horizontal-alignment: right,
+$data-chart-theme: sparkline-theme(
+	$brush: orange,
+	$negative-brush: #08a8a3,
+	$line-thickness: 1px
 );
 
 @include css-vars($data-chart-theme);
+
