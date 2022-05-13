@@ -1,30 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
 // Standard CSS normalize, comment out if not required or using a different module
-@import "~minireset.css/minireset";
-@import '~igniteui-angular/lib/core/styles/themes/index';
+@use '~igniteui-angular/theming' as *;
 
 html, body {
   height: 100%;
 }
 
 .content p {
-  margin: 15px;
+  margin: rem(15px);
 }
 
-$palette: $bootstrap-dark-palette;
-$schema: $dark-bootstrap-schema;
+$palette: $dark-material-palette;
+$schema: $dark-material-schema;
+$typeface: $material-typeface;
+$type-scale: $material-type-scale;
 
-$igx-background-color: igx-color($palette, 'surface');
-$igx-foreground-color: text-contrast($igx-background-color);
+$background-color: contrast-color($palette, 'grays', 900);
+$foreground-color: color($palette, 'grays', 900);
 
-
-@include igx-core();
-@include igx-theme($palette: $palette, $schema: $schema);
+@include core();
+@include typography($font-family: $typeface, $type-scale: $type-scale);
+@include theme($palette: $palette, $schema: $schema);
 
 body {
-    background: $igx-background-color;
-    color: rgba($igx-foreground-color, .87);
+    background: $background-color;
+    color: $foreground-color;
 }
 
-// $data-chart-theme: igx-data-chart-theme($title-horizontal-alignment: left);
-// @include igx-css-vars($data-chart-theme);
+$data-chart-theme: data-chart-theme($title-horizontal-alignment: left);
+@include css-vars($data-chart-theme);
