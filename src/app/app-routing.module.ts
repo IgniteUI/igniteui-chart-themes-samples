@@ -9,6 +9,10 @@ import { DataChartComponent } from './data-chart/data-chart.component';
 import { CategoryChartComponent } from './category-chart/category-chart.component';
 import { FinancialChartComponent } from './financial-chart/financial-chart.component';
 import { PieChartComponent } from './pie-chart/pie-chart.component';
+import { LineChartComponent } from './line-chart/line-chart.component';
+import { PointChartComponent } from './point-chart/point-chart.component';
+import { PolarChartComponent } from './polar-chart/polar-chart.component';
+import { RadialChartComponent } from './radial-chart/radial-chart.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -18,6 +22,10 @@ export const routes: Routes = [
   { path: 'category-chart', component: CategoryChartComponent, data: { text: 'Category Chart' } },
   { path: 'financial-chart', component: FinancialChartComponent, data: { text: 'Financial Chart' } },
   { path: 'pie-chart', component: PieChartComponent, data: { text: 'Pie Chart' } },
+  { path: 'line-chart', component: LineChartComponent, data: { text: 'Line Chart' } },
+  { path: 'point-chart', component: PointChartComponent, data: { text: 'Point Chart' } },
+  { path: 'polar-chart', component: PolarChartComponent, data: { text: 'Polar Chart' } },
+  { path: 'radial-chart', component: RadialChartComponent, data: { text: 'Radial Chart' } },
   { path: '**', component: PageNotFoundComponent } // must always be last
 ];
 
