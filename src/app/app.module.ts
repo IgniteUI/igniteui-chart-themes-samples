@@ -14,13 +14,20 @@ import { PieChartComponent } from './pie-chart/pie-chart.component';
 import {
   IgxCategoryChartModule,
   IgxDataChartCoreModule,
+	IgxDataChartPolarModule,
+	IgxDataChartPolarCoreModule,
   IgxBarSeriesModule,
   IgxColumnSeriesModule,
   IgxLegendModule,
   IgxDataChartInteractivityModule,
   IgxPieChartModule,
-  IgxFinancialChartModule
+  IgxFinancialChartModule,
+  IgxDataChartRadialModule
 } from 'igniteui-angular-charts';
+import { LineChartComponent } from './line-chart/line-chart.component';
+import { PointChartComponent } from './point-chart/point-chart.component';
+import { PolarChartComponent } from './polar-chart/polar-chart.component';
+import { RadialChartComponent } from './radial-chart/radial-chart.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +36,11 @@ import {
     DataChartComponent,
     CategoryChartComponent,
     FinancialChartComponent,
-    PieChartComponent
+    PieChartComponent,
+    LineChartComponent,
+    PointChartComponent,
+    PolarChartComponent,
+    RadialChartComponent
   ],
   imports: [
     FormsModule,
@@ -47,6 +58,9 @@ import {
     IgxColumnSeriesModule,
     IgxLegendModule,
     IgxDataChartInteractivityModule,
+    IgxDataChartPolarModule,
+    IgxDataChartRadialModule,
+    IgxDataChartPolarCoreModule,
     IgxPieChartModule,
     IgxFinancialChartModule
   ],
