@@ -1,3 +1,17 @@
+@use '~igniteui-angular/theming' as *;
+
 :host {
   width: 100%;
 }
+
+$financial-chart-theme: financial-chart-theme(
+  $brushes: blue,
+  $outlines: green,
+  $marker-brushes: orange,
+  $marker-outlines: yellow,
+  $plot-area-background: pink,
+  $indicator-brushes: purple,
+  $indicator-negative-brushes: red,
+);
+
+@include css-vars($financial-chart-theme);
