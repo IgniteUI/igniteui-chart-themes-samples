@@ -31,6 +31,9 @@
               "src/styles.scss",
 			  "node_modules/igniteui-angular/styles/igniteui-angular.css"
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": ["./node_modules"]
+            },
             "scripts": ["./node_modules/hammerjs/hammer.min.js"]
           },
           "configurations": {
