@@ -69,21 +69,21 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "igniteui-chart-themes:build"
+            "buildTarget": "igniteui-chart-themes:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "igniteui-chart-themes:build:production"
+              "buildTarget": "igniteui-chart-themes:build:production"
             },
             "es5": {
-              "browserTarget": "igniteui-chart-themes:build:es5"
+              "buildTarget": "igniteui-chart-themes:build:es5"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "igniteui-chart-themes:build"
+            "buildTarget": "igniteui-chart-themes:build"
           }
         },
         "test": {
