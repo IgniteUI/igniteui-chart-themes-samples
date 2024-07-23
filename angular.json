@@ -4,15 +4,15 @@
   "newProjectRoot": "projects",
   "projects": {
     "igniteui-chart-themes": {
-    "projectType": "application",
-    "schematics": {
-      "@schematics/angular:component": {
-      "style": "scss"
-      }
-    },
-    "root": "",
-    "sourceRoot": "src",
-    "prefix": "app",
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
+      "root": "",
+      "sourceRoot": "src",
+      "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -23,13 +23,10 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "aot": true,
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
             "styles": [
               "src/styles.scss",
-			  "node_modules/igniteui-angular/styles/igniteui-angular.css"
+              "node_modules/igniteui-angular/styles/igniteui-angular.css"
             ],
             "stylePreprocessorOptions": {
               "includePaths": ["./node_modules"]
@@ -38,7 +35,7 @@
           },
           "configurations": {
             "es5": {
-                "tsConfig": "tsconfig-es5.app.json"
+              "tsConfig": "tsconfig-es5.app.json"
             },
             "production": {
               "fileReplacements": [
@@ -79,7 +76,7 @@
               "browserTarget": "igniteui-chart-themes:build:production"
             },
             "es5": {
-                "browserTarget": "igniteui-chart-themes:build:es5"
+              "browserTarget": "igniteui-chart-themes:build:es5"
             }
           }
         },
@@ -96,14 +93,12 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
-            "styles": [
-              "src/styles.scss"
-            ],
+            "styles": ["src/styles.scss"],
             "scripts": ["./node_modules/hammerjs/hammer.min.js"],
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ]
+            "assets": ["src/favicon.ico", "src/assets"],
+            "stylePreprocessorOptions": {
+              "includePaths": ["node_modules"]
+            }
           }
         },
         "lint": {
@@ -114,9 +109,7 @@
               "tsconfig.spec.json",
               "e2e/tsconfig.json"
             ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "exclude": ["**/node_modules/**"]
           }
         },
         "e2e": {
