@@ -1,0 +1,38 @@
+<igx-item-legend
+  #legend
+  height="100px"
+  width="100px"
+  orientation="horizontal"
+></igx-item-legend>
+
+<igx-doughnut-chart
+  #chart
+  height="100%"
+  width="100%"
+  allowSliceSelection="true"
+  innerExtent="0.6"
+  (sliceClick)="OnSliceClick($event)"
+  selectedSliceStroke="White"
+  selectedSliceFill="Gray"
+  selectedSliceStrokeThickness="1"
+  selectedSliceOpacity="0.75"
+>
+  <igx-ring-series
+    [dataSource]="data"
+    valueMemberPath="Value"
+    labelMemberPath="Summary"
+    legendLabelMemberPath="Label"
+    [legend]="legend"
+    startAngle="260"
+  >
+  </igx-ring-series>
+</igx-doughnut-chart>
+
+<div class="overlay-center" style="line-height: 1.1; text-align: center">
+  <label style="font-size: 1.2rem"
+    ><span [textContent]="selectedSliceLabel"></span
+  ></label>
+  <label style="font-size: 2.2rem"
+    ><span [textContent]="selectedSliceValue"></span
+  ></label>
+</div>

@@ -1,0 +1,15 @@
+<select (change)="onDisplayTypeChanged($event)">
+  <option>Area</option>
+  <option>Column</option>
+  <option>Line</option>
+  <option>WinLoss</option>
+</select>
+
+<igx-sparkline
+  #sparkline
+  height="100%"
+  width="100%"
+  [dataSource]="data"
+  valueMemberPath="Value"
+  displayType="Area"
+></igx-sparkline>

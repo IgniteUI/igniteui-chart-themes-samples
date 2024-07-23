@@ -23,6 +23,7 @@
     "igniteui-angular": "^18.1.0",
     "igniteui-angular-charts": "^18.0.0",
     "igniteui-angular-core": "^18.0.0",
+    "igniteui-angular-gauges": "~18.0.0",
     "jszip": "^3.7.5",
     "minireset.css": "~0.0.7",
     "rxjs": "~7.8.0",

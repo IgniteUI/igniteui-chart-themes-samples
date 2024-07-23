@@ -10,10 +10,10 @@ html, body {
   margin: rem(15px);
 }
 
-$palette: $dark-material-palette;
-$schema: $dark-material-schema;
-$typeface: $material-typeface;
-$type-scale: $material-type-scale;
+$palette: $dark-indigo-palette;
+$schema: $dark-indigo-schema;
+$typeface: $indigo-typeface;
+$type-scale: $indigo-type-scale;
 
 $background-color: contrast-color($palette, 'gray', 900);
 $foreground-color: color($palette, 'gray', 900);
@@ -26,6 +26,3 @@ body {
     background: $background-color;
     color: $foreground-color;
 }
-
-$data-chart-theme: data-chart-theme($title-horizontal-alignment: left);
-@include css-vars($data-chart-theme);
